@@ -1,6 +1,6 @@
 # 从本地项目到可访问网页
 
-操作仅针对独立的 `titanic_streamlit` 项目目录。2026-09-28 已将代码发布至公开仓库 [ZW917/titanic-analysis-app](https://github.com/ZW917/titanic-analysis-app)，远端 `main` 与本地提交一致。Streamlit 云端部署仍待登录及实际运行验证。
+操作仅针对独立的 `titanic_streamlit` 项目目录。2026-09-28 已将代码发布至公开仓库 [ZW917/titanic-analysis-app](https://github.com/ZW917/titanic-analysis-app)，并完成 Streamlit Community Cloud 部署。正式网页：[Titanic 乘客生存分析](https://zw917-titanic-analysis.streamlit.app/)。线上六页、交互筛选、缺失年龄预测、编号查询及完整 CSV 下载均已实际检查，记录见 [验证记录](VERIFICATION.md)。
 
 本项目的部署参数：仓库 `ZW917/titanic-analysis-app`，分支 `main`，入口 `app.py`，Python `3.12`。应用不需要配置密钥。
 
@@ -51,7 +51,7 @@ py -3.12 -m venv .venv
 
 填写自己的仓库、实际分支和入口 `app.py`；在高级设置中选择 **Python 3.12**。依赖由项目 `requirements.txt` 安装，不要依靠云环境偶然预装的库。[官方部署步骤](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)
 
-确认后启动部署，查看构建和启动日志。只有部署成功且网页能正常访问，才把平台生成的实际网址写入 README 和实验报告。目前不要填写虚构链接，也不要将本地 `localhost` 地址当作公开网址。
+确认后启动部署，查看构建和启动日志。只有部署成功且网页能正常访问，才把平台生成的实际网址写入 README 和实验报告。本项目已验证的网址为 `https://zw917-titanic-analysis.streamlit.app/`；本地 `localhost` 地址仅用于开发电脑访问。
 
 Community Cloud 从仓库根目录运行程序；本地也从根目录启动，项目内保持相同目录关系。[官方文件组织说明](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/file-organization)
 
