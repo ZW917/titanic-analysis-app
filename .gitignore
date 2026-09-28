@@ -1,0 +1,11 @@
+.venv/
+.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+.env
+.env.*
+notebooks/original_analysis.ipynb
+*.log
+dist/
