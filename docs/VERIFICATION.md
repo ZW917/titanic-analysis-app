@@ -15,6 +15,15 @@
 
 自动测试不等于云端已通过验收。手机布局、云端部署及异地访问仍需在实际环境验证。公开仓库和云端状态以README中的实际链接及后续验证记录为准。
 
+## 2026-09-28 部署前复核
+
+- `python -B -m pytest -q`：16 项测试、6 项子测试再次全部通过。
+- `python -m pip check`：无损坏依赖；本地 Streamlit 健康检查返回 `ok`。
+- 再次核对 8 个受保护原文件，SHA256 全部保持不变。
+- 已发布公开仓库 [ZW917/titanic-analysis-app](https://github.com/ZW917/titanic-analysis-app)，未登录访问可读取项目文件。
+- 首次发布的 `main` 提交为 `98f687a931568d20e1b4762de2504e72b6bf7dd4`；`git ls-remote` 与本地提交一致。
+- 云端部署尚待完成，不能将本地检查或 GitHub 上传视作网页上线验收。
+
 重跑测试：
 
 ```powershell

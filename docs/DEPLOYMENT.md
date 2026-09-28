@@ -1,6 +1,8 @@
 # 从本地项目到可访问网页
 
-本文给出部署步骤，不表示 GitHub 上传或云端部署已经完成。操作仅针对新建的 `titanic_streamlit` 项目目录。
+操作仅针对独立的 `titanic_streamlit` 项目目录。2026-09-28 已将代码发布至公开仓库 [ZW917/titanic-analysis-app](https://github.com/ZW917/titanic-analysis-app)，远端 `main` 与本地提交一致。Streamlit 云端部署仍待登录及实际运行验证。
+
+本项目的部署参数：仓库 `ZW917/titanic-analysis-app`，分支 `main`，入口 `app.py`，Python `3.12`。应用不需要配置密钥。
 
 ## 1. 先在本地核对
 
@@ -35,7 +37,7 @@ py -3.12 -m venv .venv
 
 ## 3. 在 GitHub 建立仓库
 
-登录自己的 GitHub 账号，按本项目已确定的交付方式建立公开仓库，例如 `titanic-analysis-app`。名称只是建议，实际地址以创建后的仓库为准。
+本项目已通过 GitHub Desktop 发布到公开仓库 `ZW917/titanic-analysis-app`。复用本项目时可以 Fork 到自己的账号，再选择自己的仓库部署。
 
 仓库根目录应直接包含 `app.py`、`requirements.txt` 和 `.streamlit/` 等项目内容。不要多套一层文件夹后忘记调整入口路径。
 

@@ -2,6 +2,8 @@
 
 用 Streamlit 将原有 41 步 Notebook 的数据检查、特征分析、建模比较、独立评估和预测结果组织成可交互的课程项目。网页读取已保存的实验成果；切换页面和筛选条件不会反复训练模型。
 
+公开代码仓库：[ZW917/titanic-analysis-app](https://github.com/ZW917/titanic-analysis-app)。2026-09-28 已完成代码上传并验证远端提交；Streamlit 云端部署正在进行，正式网页地址将在部署和访问验证通过后补充。
+
 本目录是独立创建的网页项目。原始 Notebook、CSV 和报告所在目录不属于本项目的写入目标。`notebooks/original_analysis.ipynb` 如存在，仅是原 Notebook 的参考副本，默认不进入 Git 仓库。
 
 ## 项目内容
@@ -111,7 +113,7 @@ titanic_streamlit/
 
 ## 发布与交付
 
-GitHub 保存代码和项目文件；Streamlit Community Cloud 运行 Python 应用。GitHub Pages 不能直接运行本项目的 Streamlit 服务。详细操作见 [部署说明](docs/DEPLOYMENT.md)。本说明不代表应用已经上传或部署，实际发布地址以成功部署后取得的链接为准。
+GitHub 保存代码和项目文件；Streamlit Community Cloud 运行 Python 应用。GitHub Pages 不能直接运行本项目的 Streamlit 服务。代码已上传到上述公开仓库；云端网页尚待部署验证。详细操作见 [部署说明](docs/DEPLOYMENT.md)，正式网页地址以成功部署后取得的链接为准。
 
 项目采用公开 GitHub 仓库交付。上传内容排除 `.venv`、`.local`、本地日志、源文件完整性检查报告和包含个人路径的 Notebook 副本。数据来源及原发布方声明说明见 [数据说明](data/README.md)。
 
